@@ -14,7 +14,7 @@
 
   <div>
    <br />
-   <h2><a href="https://www.pa55w0rd.online/" target="_blank">返回我的博客</a> | <a href="./threat-broadcast">威胁情报播报</a></h2>
+   <h2><a href="https://www.pa55w0rd.online/" target="_blank">返回我的博客</a> | <a href="https://www.pa55w0rd.online/threat-broadcast/">威胁情报播报</a></h2>
    <br />
 
 %(table)s
