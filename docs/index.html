@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-28 08:28:44 -->
+<!-- RELEASE TIME : 2023-08-28 11:20:19 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bc16f8ff9dd813335677cbf51406115b</td>
+       <td>CVE-2023-40195</td>
+       <td>2023-08-28 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>Deserialization of Untrusted Data, Inclusion of Functionality from Untrusted Control Sphere vulnerability in Apache Software Foundation Apache Airflow Spark Provider.When the Apache Spark provider is installed on an Airflow deployment, an Airflow user that is authorized to configure Spark hooks can effectively run arbitrary code on the Airflow node by pointing it at a malicious Spark server. Prior to version 4.1.3, this was not called out in the documentation explicitly, so it is possible that administrators provided authorizations to configure Spark hooks without taking this into account. We recommend administrators to review their configurations to make sure the authorization to configure Spark hooks is only provided to fully trusted users.To view the warning in the docs please visit  https://airflow.apache.org/docs/apache-airflow-providers-apache-spark/4.1.3/connections/spark.html</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40195">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e5a99ecb96d683794fb23d63e3aeb150</td>
+       <td>CVE-2023-27604</td>
+       <td>2023-08-28 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>Apache Airflow Sqoop Provider, versions before 4.0.0, is affected by a vulnerability that allows an attacker pass parameters with the connections, which makes it possible to implement RCE attacks via ‘sqoop import --connect’, obtain airflow server permissions, etc. The attacker needs to be logged in and have authorization (permissions) to create/edit connections. It is recommended to upgrade to a version that is not affected.This issue was reported independently by happyhacking-k, And Xie Jianming and LiuHui of Caiji Sec Team also reported it.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27604">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>db9e3b89ba45fc522410d8a040a932e6</td>
+       <td>CVE-2023-38030</td>
+       <td>2023-08-28 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>Saho’s attendance devices ADM100 and ADM-100FP have a vulnerability of missing authentication for critical functions. An unauthenticated remote attacker can execute system commands in partial website URLs to read sensitive device information without permissions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38030">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1eeacc4275d5b8285072e99efda68edd</td>
+       <td>CVE-2023-38029</td>
+       <td>2023-08-28 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>Saho’s attendance devices ADM100 and ADM-100FP has insufficient filtering for special characters and file type within their file uploading function. A unauthenticate remote attacker authenticated can upload and execute arbitrary files to perform arbitrary system commands or disrupt service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38029">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4863b9d4656aebbdc494be2f3d50105f</td>
+       <td>CVE-2023-38028</td>
+       <td>2023-08-28 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>Saho’s attendance devices ADM100 and ADM-100FP have insufficient authentication. An unauthenticated remote attacker can exploit this vulnerability to bypass authentication to read system information and operate user's data,  but can’t control system or disrupt service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38028">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f4891288027c88177d72f5a3bc4562c0</td>
        <td>CVE-2023-38027</td>
        <td>2023-08-28 04:15:00 <img src="imgs/new.gif" /></td>
@@ -481,46 +521,6 @@
        <td>2023-08-23 22:15:00</td>
        <td>Walchem Intuition 9 firmware versions prior to v4.21 are missing authentication for some of the API routes of the management web server. This could allow an attacker to download and export sensitive data.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38422">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22c82b61130246f8aef9f48ecd5eb70f</td>
-       <td>CVE-2023-36317</td>
-       <td>2023-08-23 22:15:00</td>
-       <td>Cross Site Scripting (XSS) vulnerability in sourcecodester Student Study Center Desk Management System 1.0 allows attackers to run arbitrary code via crafted GET request to web application URL.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-36317">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e9a5463cf8fa1c89a609dae8d2a7ad0b</td>
-       <td>CVE-2023-3453</td>
-       <td>2023-08-23 22:15:00</td>
-       <td>ETIC Telecom RAS versions 4.7.0 and prior the web management portal authentication disabled by default. This could allow an attacker with adjacent network access to alter the configuration of the device or cause a denial-of-service condition.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3453">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d184d48e9f37493b95d0cd579c06275a</td>
-       <td>CVE-2023-32202</td>
-       <td>2023-08-23 22:15:00</td>
-       <td>Walchem Intuition 9 firmware versions prior to v4.21 are vulnerable to improper authentication. Login credentials are stored in a format that could allow an attacker to use them as-is to login and gain access to the device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32202">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cb493597bd0bc5222caae61299ed0269</td>
-       <td>CVE-2023-40185</td>
-       <td>2023-08-23 21:15:00</td>
-       <td>shescape is simple shell escape library for JavaScript. This may impact users that use Shescape on Windows in a threaded context. The vulnerability can result in Shescape escaping (or quoting) for the wrong shell, thus allowing attackers to bypass protections depending on the combination of expected and used shell. This bug has been patched in version 1.7.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40185">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a901cd2da44230d6cf7cd1a15228e789</td>
-       <td>CVE-2023-40178</td>
-       <td>2023-08-23 21:15:00</td>
-       <td>Node-SAML is a SAML library not dependent on any frameworks that runs in Node. The lack of checking of current timestamp allows a LogoutRequest XML to be reused multiple times even when the current time is past the NotOnOrAfter. This could impact the user where they would be logged out from an expired LogoutRequest. In bigger contexts, if LogoutRequests are sent out in mass to different SPs, this could impact many users on a large scale. This issue was patched in version 4.0.5.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40178">详情</a></td>
       </tr>
 
      </tbody>
