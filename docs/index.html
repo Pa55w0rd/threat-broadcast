@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-05 14:27:22 -->
+<!-- RELEASE TIME : 2023-09-05 16:30:54 -->
 <html lang="zh-cn">
 
  <head>
@@ -2300,6 +2300,14 @@
       </tr>
 
       <tr>
+       <td>487bdc1c01e2d019a563776471d8af4e</td>
+       <td>CVE-2023-4640</td>
+       <td>2023-08-30 17:15:11 </td>
+       <td>The controller responsible for setting the logging level does not include any authorizationchecks to ensure the user is authenticated. This can be seen by noting that it extendsController rather than AuthenticatedController and includes no further checks.&Acirc;&nbsp;This issue affects YugabyteDB Anywhere: from 2.0.0 through 2.17.3</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4640">详情</a></td>
+      </tr>
+
+      <tr>
        <td>49eaacb8462c2c10b94c87ac17c5c2a8</td>
        <td>CVE-2023-4624</td>
        <td>2023-08-30 13:15:15 </td>
@@ -2457,14 +2465,6 @@
        <td>2023-08-21 19:15:09 </td>
        <td>A NULL pointer dereference flaw was found in vmxnet3_rq_cleanup in drivers/net/vmxnet3/vmxnet3_drv.c in the networking sub-component in vmxnet3 in the Linux Kernel. This issue may allow a local attacker with normal user privilege to cause a denial of service due to a missing sanity check during cleanup.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4459">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d7d2d0c35eb1b23014461e2a922615a6</td>
-       <td>CVE-2023-4456</td>
-       <td>2023-08-21 17:15:50 </td>
-       <td>A flaw was found in openshift-logging LokiStack. The key used for caching is just the token, which is too broad. This issue allows a user with a token valid for one action to execute other actions as long as the authorization allowing the original action is still cached.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4456">详情</a></td>
       </tr>
 
      </tbody>
