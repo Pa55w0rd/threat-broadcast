@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-04-10 07:07:53 -->
+<!-- RELEASE TIME : 2025-04-11 06:20:11 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>04c4a8589f9848b617816d0cc25e3f70</td>
+       <td>CVE-2025-29918</td>
+       <td>2025-04-10 21:15:49 <img src="imgs/new.gif" /></td>
+       <td>Suricata is a network Intrusion Detection System, Intrusion Prevention System and Network Security Monitoring engine. A PCRE rule can be written that leads to an infinite loop when negated PCRE is used. Packet processing thread becomes stuck in infinite loop limiting visibility and availability in inline mode. This vulnerability is fixed in 7.0.9.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-29918">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e6ff9e7b9d6438a949bb1fc08bdcb5d</td>
+       <td>CVE-2025-29917</td>
+       <td>2025-04-10 21:15:48 <img src="imgs/new.gif" /></td>
+       <td>Suricata is a network Intrusion Detection System, Intrusion Prevention System and Network Security Monitoring engine. The bytes setting in the decode_base64 keyword is not properly limited. Due to this, signatures using the keyword and setting can cause large memory allocations of up to 4 GiB per thread. This vulnerability is fixed in 7.0.9.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-29917">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>adda6ae4fb54f83e24445e1189ccc4c9</td>
+       <td>CVE-2025-29916</td>
+       <td>2025-04-10 20:15:23 <img src="imgs/new.gif" /></td>
+       <td>Suricata is a network Intrusion Detection System, Intrusion Prevention System and Network Security Monitoring engine. Datasets declared in rules have an option to specify the `hashsize` to use. This size setting isn't properly limited, so the hash table allocation can be large. Untrusted rules can lead to large memory allocations, potentially leading to denial of service due to resource starvation. This vulnerability is fixed in 7.0.9.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-29916">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f9ed68de785d66ead8686d0bdfe420ba</td>
+       <td>CVE-2025-29915</td>
+       <td>2025-04-10 20:15:23 <img src="imgs/new.gif" /></td>
+       <td>Suricata is a network Intrusion Detection System, Intrusion Prevention System and Network Security Monitoring engine. The AF_PACKET defrag option is enabled by default and allows AF_PACKET to re-assemble fragmented packets before reaching Suricata. However the default packet size in Suricata is based on the network interface MTU which leads to Suricata seeing truncated packets. Upgrade to Suricata 7.0.9, which uses better defaults and adds warnings for user configurations that may lead to issues.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-29915">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6c87cdfc12e94a4db4c591fb042b20db</td>
+       <td>CVE-2025-3469</td>
+       <td>2025-04-10 19:16:02 <img src="imgs/new.gif" /></td>
+       <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Wikimedia Foundation MediaWiki. This vulnerability is associated with program files includes/htmlform/fields/HTMLMultiSelectField.Php. This issue affects MediaWiki: before 1.39.12, 1.42.6, 1.43.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3469">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>373f252c67c2975429d086abadf9ec0e</td>
+       <td>CVE-2025-32700</td>
+       <td>2025-04-10 19:16:02 <img src="imgs/new.gif" /></td>
+       <td>Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation AbuseFilter. This vulnerability is associated with program files includes/Api/QueryAbuseLog.Php, includes/Pager/AbuseLogPager.Php, includes/Special/SpecialAbuseLog.Php, includes/View/AbuseFilterViewExamine.Php. This issue affects AbuseFilter: from >= 1.43.0 before 1.43.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32700">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0c7e17eff50f07c563002e6bba7bfba4</td>
+       <td>CVE-2025-32699</td>
+       <td>2025-04-10 19:16:01 <img src="imgs/new.gif" /></td>
+       <td>Vulnerability in Wikimedia Foundation MediaWiki, Wikimedia Foundation Parsoid.This issue affects MediaWiki: before 1.39.12, 1.42.6, 1.43.1; Parsoid: before 0.16.5, 0.19.2, 0.20.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32699">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>abc8faf15ba5961d29632ce755fb0e3b</td>
+       <td>CVE-2025-32698</td>
+       <td>2025-04-10 19:16:01 <img src="imgs/new.gif" /></td>
+       <td>Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Wikimedia Foundation MediaWiki. This vulnerability is associated with program files includes/logging/LogPager.Php. This issue affects MediaWiki: before 1.39.12, 1.42.6, 1.43.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32698">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>827a7732968a0bb6d7af05a22e862299</td>
+       <td>CVE-2025-32697</td>
+       <td>2025-04-10 19:16:01 <img src="imgs/new.gif" /></td>
+       <td>Improper Preservation of Permissions vulnerability in Wikimedia Foundation MediaWiki. This vulnerability is associated with program files includes/editpage/IntroMessageBuilder.Php, includes/Permissions/PermissionManager.Php, includes/Permissions/RestrictionStore.Php. This issue affects MediaWiki: before 1.42.6, 1.43.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32697">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5e00f0b736d94aa91ce3d93918ea080e</td>
+       <td>CVE-2025-32696</td>
+       <td>2025-04-10 19:16:01 <img src="imgs/new.gif" /></td>
+       <td>Improper Preservation of Permissions vulnerability in Wikimedia Foundation MediaWiki. This vulnerability is associated with program files includes/actions/RevertAction.Php, includes/api/ApiFileRevert.Php. This issue affects MediaWiki: before 1.39.12, 1.42.6, 1.43.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32696">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c02201930ed35078f508a51c56ddd99f</td>
        <td>CVE-2025-27690</td>
        <td>2025-04-10 03:15:19 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2025-03-03 01:15:11</td>
        <td>A vulnerability, which was classified as critical, has been found in Mini-Tmall up to 20250211. This issue affects the function select of the file com/xq/tmall/dao/ProductMapper.java. The manipulation of the argument orderBy leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1843">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5628397a9ad7b479da5cd4259d55af63</td>
-       <td>CVE-2025-25726</td>
-       <td>2025-03-02 02:15:36</td>
-       <td>Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2024-53427. Reason: This candidate is a reservation duplicate of CVE-2024-53427. Notes: All CVE users should reference CVE-2024-53427 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-25726">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>26cb7e30f5ca530699f1e649a981ca7e</td>
-       <td>CVE-2025-25725</td>
-       <td>2025-03-02 02:15:36</td>
-       <td>Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2025-25724. Reason: This candidate is a reservation duplicate of CVE-2025-25724. Notes: All CVE users should reference CVE-2025-25724 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-25725">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cdcca04944149e838ca965329673b67f</td>
-       <td>CVE-2025-25724</td>
-       <td>2025-03-02 02:15:36</td>
-       <td>list_item_verbose in tar/util.c in libarchive through 3.7.7 does not check an strftime return value, which can lead to a denial of service or unspecified other impact via a crafted TAR archive that is read with a verbose value of 2. For example, the 100-byte buffer may not be sufficient for a custom locale.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-25724">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4befd016b1d03f8aaea5a816a4d26e8</td>
-       <td>CVE-2025-1808</td>
-       <td>2025-03-02 01:15:10</td>
-       <td>A vulnerability has been found in Pixsoft E-Saphira 1.7.24 and classified as critical. This vulnerability affects unknown code of the file /servlet?act=login&tipo=1 of the component Login Endpoint. The manipulation of the argument txtUsuario leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1808">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>937bf14cb89c7b1e992e963e089f031c</td>
-       <td>CVE-2025-1807</td>
-       <td>2025-03-02 00:15:34</td>
-       <td>A vulnerability, which was classified as problematic, was found in Eastnets PaymentSafe 2.5.26.0. This affects an unknown part of the file /directRouter.rfc of the component Edit Manual Reply Handler. The manipulation of the argument Title leads to basic cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1807">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a701ea3ed1f45a28de20b3a4f7b5de45</td>
-       <td>CVE-2025-1806</td>
-       <td>2025-03-02 00:15:33</td>
-       <td>A vulnerability, which was classified as problematic, has been found in Eastnets PaymentSafe 2.5.26.0. Affected by this issue is some unknown functionality of the file /Default.aspx of the component URL Handler. The manipulation leads to improper authorization. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1806">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9607761e8145e0d1d595e3b5861bf97d</td>
-       <td>CVE-2025-1804</td>
-       <td>2025-03-01 19:15:10</td>
-       <td>A vulnerability was found in Blizzard Battle.Net up to 2.39.0.15212 on Windows and classified as critical. Affected by this issue is some unknown functionality in the library profapi.dll. The manipulation leads to uncontrolled search path. The attack needs to be approached locally. The complexity of an attack is rather high. The exploitation is known to be difficult.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1804">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7cc8bb3523412a9b7d21ea8942560b1</td>
-       <td>CVE-2025-1800</td>
-       <td>2025-03-01 18:15:34</td>
-       <td>A vulnerability has been found in D-Link DAR-7000 3.2 and classified as critical. This vulnerability affects the function get_ip_addr_details of the file /view/vpn/sxh_vpn/sxh_vpnlic.php of the component HTTP POST Request Handler. The manipulation of the argument ethname leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1800">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8337ce1e3c6371a24da73a6395c85988</td>
-       <td>CVE-2025-1799</td>
-       <td>2025-03-01 18:15:34</td>
-       <td>A vulnerability, which was classified as critical, was found in Zorlan SkyCaiji 2.9. This affects the function previewAction of the file vendor/skycaiji/app/admin/controller/Tool.php. The manipulation of the argument data leads to server-side request forgery. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1799">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aaaa437aa386a05fcf7104a69f48b840</td>
-       <td>CVE-2025-1797</td>
-       <td>2025-03-01 15:15:11</td>
-       <td>A vulnerability, which was classified as critical, has been found in Hunan Zhonghe Baiyi Information Technology Baiyiyun Asset Management and Operations System up to 20250217. Affected by this issue is some unknown functionality of the file /wuser/anyUserBoundHouse.php. The manipulation of the argument huid leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1797">详情</a></td>
       </tr>
 
      </tbody>
